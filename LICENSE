@@ -15,5 +15,7 @@ The dataset includes material derived from:
     https://doi.org/10.5281/zenodo.18716581
   - MiDRASH Automatic Transcriptions of the Cairo Geniza Fragments
     (CC BY 4.0), https://doi.org/10.5281/zenodo.17734473
-  - Cambridge Digital Library (CUDL) metadata
+  - Cambridge Digital Library (CUDL) metadata (CC0 1.0)
+  - Scholarly editions behind each PGP transcription, credited per
+    record in the `edCredit` field
 Please credit these sources when you use NAGiD.

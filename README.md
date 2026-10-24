@@ -14,7 +14,7 @@ NAGiD is a JSON database of **10,952 Cairo Genizah letters**. It brings metadata
 
 | File | Size | Contents |
 |---|---|---|
-| `data/nagid_letters_v0.3-beta.json` | 23 MB | the full dataset |
+| `data/nagid_letters_v0.3-beta.json` | 24 MB | the full dataset |
 | `nagid_letters_v0.3-beta.json.zip` | 7 MB | the same file, zipped (attached to the [release](https://github.com/jmgr2553/NAGiD/releases)) |
 
 ```python
@@ -38,10 +38,11 @@ The file is one JSON object. Each **key is a shelfmark**; joined fragments are w
 | `Info` | Description of the document (from PGP) | free text |
 | `editionTXT` | Transcription of the text | text; `"NONE"` if none is available |
 | `edSource` | Where the transcription comes from | `"MiDRASH"`, `"PGP"`, `"NA"` |
+| `edCredit` | Credit for the transcription: for `PGP`, the scholarly edition it comes from (author, title, year, location, emendations); for `MiDRASH`, the MiDRASH dataset | text; `"NA"` if there is no transcription |
 | `dateYear` | Year of the letter (CE) | year; `"UNK"` unknown; `"MULTI"` several dates; `-1` undatable per PGP |
 | `dateSource` | Where the date comes from | `"PGP"`, `"CUDL"`, `"AI"`, `"NA"` |
-| `Language1` | Main language | e.g. `"Judaeo-Arabic"`, `"Hebrew"`, `"Arabic"`, `"multi"`, `"UNK"` |
-| `Language2` | Second language, if any | same as above |
+| `Language1` | Main language (from PGP) | e.g. `"Judaeo-Arabic"`, `"Hebrew"`, `"Arabic"`, `"multi"`, `"UNK"` |
+| `Language2` | Second language, if any (from PGP) | same as above |
 | `Sender`, `Addressee` | People | *not yet filled in (`"UNK"`)* |
 | `Origin`, `Destination` | Places | *not yet filled in (`"UNK"`)* |
 | `Topic` | Subject | *not yet filled in (`"UNK"`)* |
@@ -65,22 +66,26 @@ Main languages: Judaeo-Arabic 5,734 · Hebrew 1,602 · multi 1,600 · Arabic 1,3
 - **Organised by shelfmark, not by fragment.** A shelfmark can contain several fragments, or be part of a join.
 - **Not exhaustive.** Only letters that could be matched across the sources are included.
 - **Machine-generated transcriptions.** Transcriptions with `edSource: "MiDRASH"` were produced automatically (HTR) and have not been corrected by hand.
-- **AI-generated values.** Dates with `dateSource: "AI"` and the language labels were produced by models and may be wrong.
+- **AI-generated dates.** Dates with `dateSource: "AI"` were inferred by a large language model (Qwen) from the PGP description and may be wrong.
 - **Empty fields.** People, places and topics are planned for later releases.
 
 ## Sources and credits
 
-NAGiD is derived from the following sources:
+NAGiD is derived from the following sources. Each record says where its transcription (`edSource`, `edCredit`) and date (`dateSource`) come from.
 
-- **Princeton Geniza Project (PGP)** — descriptions, IDs, dates and transcriptions. Rustow, M., Koeser, R. S., Richman, R., Ryzhova, K., Bensalim, A., & Abdellatif, M. (2026). *Princeton Geniza Project datasets* (Version v1.1) [Data set]. Zenodo. [doi:10.5281/zenodo.18716581](https://doi.org/10.5281/zenodo.18716581) · CC BY-NC 4.0
+- **Princeton Geniza Project (PGP)** — descriptions (`Info`), IDs, dates, languages and transcriptions. Rustow, M., Koeser, R. S., Richman, R., Ryzhova, K., Bensalim, A., & Abdellatif, M. (2026). *Princeton Geniza Project datasets* (Version v1.1) [Data set]. Zenodo. [doi:10.5281/zenodo.18716581](https://doi.org/10.5281/zenodo.18716581) · CC BY-NC 4.0
+  - PGP transcriptions are digital editions of published and unpublished scholarship (e.g. Gil, Goitein, Mann, Ashtor). The edition behind each one is cited in its `edCredit` field.
 - **MiDRASH** — automatic (HTR) transcriptions. Stoekl Ben Ezra, D., Bambaci, L., Kiessling, B., Lapin, H., Ezer, N., Lolli, E., Rustow, M., Dershowitz, N., Kurar Barakat, B., Gogawale, S., Shmidman, A., Lavee, M., Siew, T., Raziel Kretzmer, V., Vasyutinsky Shapira, D., Olszowy-Schlanger, J., & Gila, Y. (2025). *MiDRASH Automatic Transcriptions of the Cairo Geniza Fragments* [Data set]. Zenodo. [doi:10.5281/zenodo.17734473](https://doi.org/10.5281/zenodo.17734473) · CC BY 4.0
-- **Cambridge Digital Library (CUDL)** — dates for Taylor-Schechter letters
-- **National Library of Israel / Ktiv** — manuscript identifiers
-- **Dicta** — manuscript catalogue matching
+- **Cambridge University Library, Cambridge Digital Library (CUDL)** — dates for Taylor-Schechter letters, taken from the catalogue metadata ([cudl.lib.cam.ac.uk](https://cudl.lib.cam.ac.uk)) · CC0 1.0
+- **National Library of Israel (NLI) / Ktiv** — manuscript system numbers (`nliID`), matched to shelfmarks through a catalogue table obtained via **Dicta**
+
+## Changes made to the source data
+
+NAGiD selects the letters from PGP and restructures them into one record per shelfmark. It merges in MiDRASH transcriptions, CUDL dates and NLI identifiers, adds AI-inferred dates, and simplifies the languages (several primary languages → `"multi"`). PGP transcriptions and descriptions are copied verbatim. MiDRASH page-level transcriptions are joined into one text per manuscript (NLI system number) and are otherwise unchanged.
 
 ## License
 
-[CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/). Because NAGiD contains PGP data, which is licensed CC BY-NC 4.0, it is released under the same non-commercial license. When you use NAGiD, please also credit the original sources listed above.
+[CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/). Because NAGiD contains PGP data, which is licensed CC BY-NC 4.0, it is released under the same non-commercial license. When you use NAGiD, please also credit the original sources listed above and, where you use individual transcriptions, the editions given in `edCredit`.
 
 ## Citation
 

@@ -1,4 +1,6 @@
-# NAGiD 👑 – Non-exhaustive Accessible Genizah Database
+# NAGiD 👑
+
+**Non-exhaustive Accessible Genizah Database**
 
 *Beta release v0.3.0* · Juan Moreno Gonzalez ([ORCID 0009-0003-6528-0736](https://orcid.org/0009-0003-6528-0736)), Faculty of Asian and Middle Eastern Studies, University of Cambridge
 

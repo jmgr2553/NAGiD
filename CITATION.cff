@@ -28,7 +28,44 @@ references:
       - given-names: Rebecca Sutton
         family-names: Koeser
   - type: dataset
-    title: MiDRASH transcriptions
+    title: MiDRASH Automatic Transcriptions of the Cairo Geniza Fragments
+    year: 2025
+    publisher:
+      name: Zenodo
+    doi: 10.5281/zenodo.17734473
     license: CC-BY-4.0
     authors:
-      - name: MiDRASH project
+      - family-names: Stoekl Ben Ezra
+        given-names: D.
+      - family-names: Bambaci
+        given-names: L.
+      - family-names: Kiessling
+        given-names: B.
+      - family-names: Lapin
+        given-names: H.
+      - family-names: Ezer
+        given-names: N.
+      - family-names: Lolli
+        given-names: E.
+      - family-names: Rustow
+        given-names: M.
+      - family-names: Dershowitz
+        given-names: N.
+      - family-names: Kurar Barakat
+        given-names: B.
+      - family-names: Gogawale
+        given-names: S.
+      - family-names: Shmidman
+        given-names: A.
+      - family-names: Lavee
+        given-names: M.
+      - family-names: Siew
+        given-names: T.
+      - family-names: Raziel Kretzmer
+        given-names: V.
+      - family-names: Vasyutinsky Shapira
+        given-names: D.
+      - family-names: Olszowy-Schlanger
+        given-names: J.
+      - family-names: Gila
+        given-names: Y.

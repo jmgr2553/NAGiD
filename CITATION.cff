@@ -8,7 +8,7 @@ authors:
     affiliation: Faculty of Asian and Middle Eastern Studies, University of Cambridge
     orcid: 'https://orcid.org/0009-0003-6528-0736'
 repository-code: 'https://github.com/jmgr2553/NAGiD'
-license: CC-BY-NC-4.0
+license: CC-BY-NC-SA-4.0
 version: 0.3.0-beta
 date-released: '2026-10-24'
 keywords:
@@ -86,3 +86,11 @@ references:
         given-names: J.
       - family-names: Gila
         given-names: Y.
+  - type: software
+    title: GenizahSearch
+    license: CC-BY-NC-SA-4.0
+    url: 'https://github.com/gershuni/GenizahSearch'
+    authors:
+      - given-names: Hillel
+        family-names: Gershuni
+      - name: Dicta – The Israel Center for Text Analysis

@@ -66,7 +66,7 @@ Main languages: Judaeo-Arabic 5,734 · Hebrew 1,602 · multi 1,600 · Arabic 1,3
 - **Organised by shelfmark, not by fragment.** A shelfmark can contain several fragments, or be part of a join.
 - **Not exhaustive.** Only letters that could be matched across the sources are included.
 - **Machine-generated transcriptions.** Transcriptions with `edSource: "MiDRASH"` were produced automatically (HTR) and have not been corrected by hand.
-- **AI-generated dates.** Dates with `dateSource: "AI"` were inferred by a large language model (Qwen) from the PGP description and may be wrong.
+- **AI-generated dates.** Dates with `dateSource: "AI"` were inferred by a large language model (Qwen3 32B, `qwen3:32b`, run locally) from the PGP description and may be wrong.
 - **Empty fields.** People, places and topics are planned for later releases.
 
 ## Sources and credits
@@ -77,7 +77,7 @@ NAGiD is derived from the following sources. Each record says where its transcri
   - PGP transcriptions are digital editions of published and unpublished scholarship (e.g. Gil, Goitein, Mann, Ashtor). The edition behind each one is cited in its `edCredit` field.
 - **MiDRASH** — automatic (HTR) transcriptions. Stoekl Ben Ezra, D., Bambaci, L., Kiessling, B., Lapin, H., Ezer, N., Lolli, E., Rustow, M., Dershowitz, N., Kurar Barakat, B., Gogawale, S., Shmidman, A., Lavee, M., Siew, T., Raziel Kretzmer, V., Vasyutinsky Shapira, D., Olszowy-Schlanger, J., & Gila, Y. (2025). *MiDRASH Automatic Transcriptions of the Cairo Geniza Fragments* [Data set]. Zenodo. [doi:10.5281/zenodo.17734473](https://doi.org/10.5281/zenodo.17734473) · CC BY 4.0
 - **Cambridge University Library, Cambridge Digital Library (CUDL)** — dates for Taylor-Schechter letters, taken from the catalogue metadata ([cudl.lib.cam.ac.uk](https://cudl.lib.cam.ac.uk)) · CC0 1.0
-- **National Library of Israel (NLI) / Ktiv** — manuscript system numbers (`nliID`), matched to shelfmarks through a catalogue table obtained via **Dicta**
+- **National Library of Israel (NLI) / Ktiv** — manuscript system numbers (`nliID`), matched to shelfmarks through the catalogue table (`libraries.csv`) distributed with GenizahSearch: Gershuni, H. *GenizahSearch* [Software and data], Dicta — The Israel Center for Text Analysis. [github.com/gershuni/GenizahSearch](https://github.com/gershuni/GenizahSearch) · CC BY-NC-SA 4.0
 
 ## Changes made to the source data
 
@@ -85,7 +85,7 @@ NAGiD selects the letters from PGP and restructures them into one record per she
 
 ## License
 
-[CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/). Because NAGiD contains PGP data, which is licensed CC BY-NC 4.0, it is released under the same non-commercial license. When you use NAGiD, please also credit the original sources listed above and, where you use individual transcriptions, the editions given in `edCredit`.
+[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). NAGiD combines PGP data (CC BY-NC 4.0) with material from GenizahSearch (CC BY-NC-SA 4.0), so it is released under the ShareAlike non-commercial license: you may share and adapt it for non-commercial purposes, with credit, and anything you build from it and share must use the same license. When you use NAGiD, please also credit the original sources listed above and, where you use individual transcriptions, the editions given in `edCredit`.
 
 ## Citation
 

@@ -1,0 +1,53 @@
+{
+  "title": "NAGiD: Non-exhaustive Accessible Genizah Database",
+  "upload_type": "dataset",
+  "description": "NAGiD is a JSON database of Cairo Genizah letters. It brings metadata and transcriptions from the Princeton Geniza Project, MiDRASH, the Cambridge Digital Library and the National Library of Israel together into one record per shelfmark, and adds AI-inferred dates. Each transcription is credited to its source edition. See the README for the schema, coverage and limitations.",
+  "creators": [
+    {
+      "name": "Moreno Gonzalez, Juan",
+      "orcid": "0009-0003-6528-0736",
+      "affiliation": "Faculty of Asian and Middle Eastern Studies, University of Cambridge"
+    }
+  ],
+  "license": "cc-by-nc-sa-4.0",
+  "access_right": "open",
+  "keywords": [
+    "Cairo Genizah",
+    "Judaeo-Arabic",
+    "Hebrew",
+    "letters",
+    "digital humanities"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "10.5281/zenodo.18716581",
+      "relation": "isDerivedFrom",
+      "scheme": "doi",
+      "resource_type": "dataset"
+    },
+    {
+      "identifier": "10.5281/zenodo.17734473",
+      "relation": "isDerivedFrom",
+      "scheme": "doi",
+      "resource_type": "dataset"
+    },
+    {
+      "identifier": "https://github.com/gershuni/GenizahSearch",
+      "relation": "isDerivedFrom",
+      "scheme": "url",
+      "resource_type": "software"
+    },
+    {
+      "identifier": "https://cudl.lib.cam.ac.uk",
+      "relation": "isDerivedFrom",
+      "scheme": "url",
+      "resource_type": "dataset"
+    }
+  ],
+  "references": [
+    "Rustow, M., Koeser, R. S., Richman, R., Ryzhova, K., Bensalim, A., & Abdellatif, M. (2026). Princeton Geniza Project datasets (Version v1.1) [Data set]. Zenodo. https://doi.org/10.5281/zenodo.18716581",
+    "Stoekl Ben Ezra, D., Bambaci, L., Kiessling, B., Lapin, H., Ezer, N., Lolli, E., Rustow, M., Dershowitz, N., Kurar Barakat, B., Gogawale, S., Shmidman, A., Lavee, M., Siew, T., Raziel Kretzmer, V., Vasyutinsky Shapira, D., Olszowy-Schlanger, J., & Gila, Y. (2025). MiDRASH Automatic Transcriptions of the Cairo Geniza Fragments [Data set]. Zenodo. https://doi.org/10.5281/zenodo.17734473",
+    "Gershuni, H. GenizahSearch [Software and data]. Dicta – The Israel Center for Text Analysis. https://github.com/gershuni/GenizahSearch",
+    "Cambridge University Library. Cambridge Digital Library, Taylor-Schechter Genizah Collection metadata (CC0 1.0). https://cudl.lib.cam.ac.uk"
+  ]
+}

@@ -1,5 +1,7 @@
 # NAGiD 👑
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23618169.svg)](https://doi.org/10.5281/zenodo.23618169)
+
 **Non-exhaustive Accessible Genizah Database**
 
 *Beta release v0.3.0* · Juan Moreno Gonzalez ([ORCID 0009-0003-6528-0736](https://orcid.org/0009-0003-6528-0736)), Faculty of Asian and Middle Eastern Studies, University of Cambridge
@@ -89,4 +91,6 @@ NAGiD selects the letters from PGP and restructures them into one record per she
 
 ## Citation
 
-See [`CITATION.cff`](CITATION.cff), or use GitHub's **"Cite this repository"** button.
+> Moreno Gonzalez, J. (2026). *NAGiD: Non-exhaustive Accessible Genizah Database* (Version v0.3.0-beta) [Data set]. Zenodo. https://doi.org/10.5281/zenodo.23618170
+
+To cite NAGiD in general (always resolves to the latest version), use [doi:10.5281/zenodo.23618169](https://doi.org/10.5281/zenodo.23618169). See also [`CITATION.cff`](CITATION.cff) or GitHub's **"Cite this repository"** button.

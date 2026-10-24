@@ -72,7 +72,7 @@ Main languages: Judaeo-Arabic 5,734 · Hebrew 1,602 · multi 1,600 · Arabic 1,3
 
 NAGiD is derived from the following sources:
 
-- **Princeton Geniza Project (PGP)** v1.1, Rustow, M., Koeser, R. S., et al. — descriptions, IDs, dates and transcriptions. [doi:10.5281/zenodo.15839055](https://doi.org/10.5281/zenodo.15839055) · CC BY-NC 4.0
+- **Princeton Geniza Project (PGP)** — descriptions, IDs, dates and transcriptions. Rustow, M., Koeser, R. S., Richman, R., Ryzhova, K., Bensalim, A., & Abdellatif, M. (2026). *Princeton Geniza Project datasets* (Version v1.1) [Data set]. Zenodo. [doi:10.5281/zenodo.18716581](https://doi.org/10.5281/zenodo.18716581) · CC BY-NC 4.0
 - **MiDRASH** — automatic (HTR) transcriptions. Stoekl Ben Ezra, D., Bambaci, L., Kiessling, B., Lapin, H., Ezer, N., Lolli, E., Rustow, M., Dershowitz, N., Kurar Barakat, B., Gogawale, S., Shmidman, A., Lavee, M., Siew, T., Raziel Kretzmer, V., Vasyutinsky Shapira, D., Olszowy-Schlanger, J., & Gila, Y. (2025). *MiDRASH Automatic Transcriptions of the Cairo Geniza Fragments* [Data set]. Zenodo. [doi:10.5281/zenodo.17734473](https://doi.org/10.5281/zenodo.17734473) · CC BY 4.0
 - **Cambridge Digital Library (CUDL)** — dates for Taylor-Schechter letters
 - **National Library of Israel / Ktiv** — manuscript identifiers

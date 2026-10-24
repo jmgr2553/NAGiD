@@ -19,14 +19,31 @@ keywords:
 references:
   - type: dataset
     title: Princeton Geniza Project datasets
-    version: '1.1'
-    doi: 10.5281/zenodo.15839055
+    version: v1.1
+    year: 2026
+    publisher:
+      name: Zenodo
+    doi: 10.5281/zenodo.18716581
     license: CC-BY-NC-4.0
     authors:
       - given-names: Marina
         family-names: Rustow
+        orcid: 'https://orcid.org/0000-0003-4510-2388'
       - given-names: Rebecca Sutton
         family-names: Koeser
+        orcid: 'https://orcid.org/0000-0002-8762-8057'
+      - given-names: Rachel
+        family-names: Richman
+        orcid: 'https://orcid.org/0000-0001-7211-7185'
+      - given-names: Ksenia
+        family-names: Ryzhova
+        orcid: 'https://orcid.org/0000-0002-9349-6097'
+      - given-names: Amel
+        family-names: Bensalim
+        orcid: 'https://orcid.org/0009-0006-7468-8540'
+      - given-names: Mohamed
+        family-names: Abdellatif
+        orcid: 'https://orcid.org/0009-0007-7726-0766'
   - type: dataset
     title: MiDRASH Automatic Transcriptions of the Cairo Geniza Fragments
     year: 2025
